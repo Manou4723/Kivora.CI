@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Kivora.CI — la marketplace ivoirienne pour acheter et vendre facilement." />
+    <title>Kivora.CI — Marketplace ivoirienne</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="header">
+      <nav class="nav container" aria-label="Navigation principale">
+        <a class="brand" href="#" aria-label="Accueil Kivora">Kivora<span>.CI</span></a>
+        <div class="nav-actions">
+          <button class="icon-button" type="button" aria-label="Rechercher">⌕</button>
+          <a class="button button-light" href="#categories">Explorer</a>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="hero-content container">
+          <p class="eyebrow">Marché local · Achat facile · Ivoire</p>
+          <h1>Les bonnes affaires sont<br />à portée de <em>clic.</em></h1>
+          <p class="hero-text">Découvrez les vendeurs, artisans et boutiques près de chez vous.</p>
+          <form class="search" id="search-form">
+            <label class="sr-only" for="search-input">Rechercher un produit</label>
+            <input id="search-input" type="search" placeholder="Que cherchez-vous ?" />
+            <button type="submit">Rechercher</button>
+          </form>
+        </div>
+      </section>
+
+      <section class="categories container" id="categories">
+        <div class="section-heading">
+          <div><p class="eyebrow dark">Découvrez</p><h2>Nos catégories</h2></div>
+          <a href="#products">Voir tout →</a>
+        </div>
+        <div class="category-grid" id="category-grid"></div>
+      </section>
+
+      <section class="products container" id="products">
+        <div class="section-heading">
+          <div><p class="eyebrow dark">Sélection</p><h2>Produits populaires</h2></div>
+        </div>
+        <div class="product-grid" id="product-grid"></div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="container footer-inner">
+        <a class="brand" href="#">Kivora<span>.CI</span></a>
+        <p>© <span id="year"></span> Kivora.CI · Côte d’Ivoire</p>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
